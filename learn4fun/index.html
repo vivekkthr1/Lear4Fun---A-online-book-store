@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Learn4Fun</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="myFunction();">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a href="index.html" class="navbar-brand"><b>Learn4Fun</b></a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navNavbar"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navNavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="./php/search.php" class="nav-link">Search</a>
+              </li>
+              <li class="nav-item">
+                <a href="login.html" class="nav-link">Login</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  <!-- SHOWCASE SLIDER -->
+  <section id="showcase">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-image-1 active">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-right mb-5">
+              <h1 class="display-3">Get a personalized experience</h1>
+              <p class="lead">Get a recommended books on your dashboard.</p>
+              <a href="signup.html" class="btn btn-danger btn-lg">Sign Up Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-2">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block mb-5">
+              <h1 class="display-3">Explore now</h1>
+              <p class="lead">Login to explolre the features.</p>
+              <a href="login.html" class="btn btn-primary btn-lg">Login</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-3">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-right mb-5">
+              <h1 class="display-3">Find any e-book for free.</h1>
+              <p class="lead">Explore the e-books and also get a link to purchase it for hard copy.</p>
+              <a href="about.html" class="btn btn-success btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+
+      <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- HOME ICON SECTION -->
+  <section id="home-icons" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-6 text-center">
+          <i class="fa fa-cog mb-2"></i>
+          <h3>Search Any E-book</h3>
+          <p>We provide information about any e-book.</p>
+        </div>
+        <div class="col-md-6 mb-6 text-center">
+          <i class="fa fa-cloud mb-2"></i>
+          <h3>Download E-book</h3>
+          <p>Download with a single click.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOME HEADING SECTION -->
+  <section id="home-heading" class="p-5">
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container pt-5">
+            <h1>Are You Ready To Get Started?</h1>
+            <p class="d-none d-md-block">We can provide you any E-book you want.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO SECTION -->
+  <section id="info" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+            <h3>E-books</h3>
+            <p>Get Download link of any book by search.</p>
+            <a href="search.php" class="btn btn-outline-danger btn-lg">Learn More</a>
+        </div>
+        <div class="col-md-6">
+          <img src="img/laptop.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO PLAY SECTION -->
+  <section id="video-play">
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container p-5">
+            <a
+              href="#"
+              class="video"
+              data-video="https://www.youtube.com/embed/uy6zdEbxjuU"
+              data-toggle="modal"
+              data-target="#videoModal"
+            >
+              <i class="fa fa-play"></i>
+            </a>
+            <h1>See how to use</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <!-- Request for a e-book -->
+  <section id="request" class="text-center p-5 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Request for a e-book</h1>
+          <p>Please fill out the below form and we will upload your requested e-book soon.</p>
+          <form class="form-inline justify-content-center">
+            <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Enter Book Name">
+            <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Enter Book Author">
+            <input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Enter Email">
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="main-footer" class="text-center p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+            <p>Copyright 2018 &copy; Learn4Fun</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- VIDEO MODAL -->
+  <div class="modal fade" id="videoModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="close" data-dismiss="modal"><span>&times;</span></button>
+          <iframe src="" height="350" width="100%" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
